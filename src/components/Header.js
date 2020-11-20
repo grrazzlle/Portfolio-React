@@ -16,10 +16,10 @@ class Header extends Component {
 
   renderPage = () => {
     return <Switch>
-      <Route exact path="/ContactPage" component={ContactPage} />
-      <Route exact path="/AboutPage" component={AboutPage} />
-      <Route exact path="/PortfolioPage" component={PortfolioPage} />
-      <Redirect to="/AboutPage" />
+      <Route exact path="ContactPage" component={ContactPage} />
+      <Route exact path="AboutPage" component={AboutPage} />
+      <Route exact path="PortfolioPage" component={PortfolioPage} />
+      <Redirect to="AboutPage" />
     </Switch>
 
   };
