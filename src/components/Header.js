@@ -19,7 +19,7 @@ class Header extends Component {
       <Route path="/ContactPage" component={ContactPage} />
       <Route path="/AboutPage" component={AboutPage} />
       <Route path="/PortfolioPage" component={PortfolioPage} />
-      {/* <Redirect to="/AboutPage" /> */}
+      <Redirect to="/AboutPage" />
     </Switch>
 
   };
