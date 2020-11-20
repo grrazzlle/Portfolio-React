@@ -7,7 +7,7 @@ import {BrowserRouter as Router,Route,Switch,Redirect} from 'react-router-dom';
 
 class Header extends Component {
   state = {
-    currentPage: "AboutPage"
+    currentPage: "/Portfolio-React/AboutPage"
   };
 
   handlePageChange = page => {
@@ -16,10 +16,10 @@ class Header extends Component {
 
   renderPage = () => {
     return <Switch>
-      <Route exact path="ContactPage" component={ContactPage} />
-      <Route exact path="AboutPage" component={AboutPage} />
-      <Route exact path="PortfolioPage" component={PortfolioPage} />
-      <Redirect to="AboutPage" />
+      <Route exact path="/Portfolio-React/ContactPage" component={ContactPage} />
+      <Route exact path="/Portfolio-React/AboutPage" component={AboutPage} />
+      <Route exact path="/Portfolio-React/PortfolioPage" component={PortfolioPage} />
+      <Redirect to="/Portfolio-React/AboutPage" />
     </Switch>
 
   };
