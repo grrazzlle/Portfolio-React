@@ -6,7 +6,7 @@ function NavTabs(props) {
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <NavLink
-          to="/Portfolio-React/AboutPage"
+          to="/AboutPage"
           onClick={() => props.handlePageChange("AboutPage")}
           className={"nav-link"}
         >
@@ -15,7 +15,7 @@ function NavTabs(props) {
       </li>
       <li className="nav-item">
         <NavLink
-          to="/Portfolio-React/AboutPage"
+          to="/AboutPage"
           onClick={() => props.handlePageChange("AboutPage")}
           activeClassName="nav-link active"
           className={"nav-link"}
@@ -25,7 +25,7 @@ function NavTabs(props) {
       </li>
       <li className="nav-item">
         <NavLink
-          to="/Portfolio-React/PortfolioPage"
+          to="/PortfolioPage"
           onClick={() => props.handlePageChange("PortfolioPage")}
           activeClassName="nav-link active"
           className={"nav-link"}
@@ -35,7 +35,7 @@ function NavTabs(props) {
       </li>
       <li className="nav-item">
         <NavLink
-          to="/Portfolio-React/ContactPage"
+          to="/ContactPage"
           onClick={() => props.handlePageChange("ContactPage")}
           activeClassName="nav-link active"
           className={"nav-link"}
