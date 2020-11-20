@@ -7,7 +7,7 @@ import {BrowserRouter as Router,Route,Switch,Redirect} from 'react-router-dom';
 
 class Header extends Component {
   state = {
-    currentPage: "AboutPage"
+    currentPage: "Portfolio-React/AboutPage"
   };
 
   handlePageChange = page => {
