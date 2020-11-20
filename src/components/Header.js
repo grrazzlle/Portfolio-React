@@ -3,11 +3,11 @@ import NavTabs from "./NavTabs";
 import AboutPage from "../pages/AboutPage";
 import PortfolioPage from "../pages/PortfolioPage";
 import ContactPage from "../pages/ContactPage";
-import {BrowserRouter as Router,Route,Switch,Redirect} from 'react-router-dom';
+import {HashRouter as Router,Route,Switch,Redirect} from 'react-router-dom';
 
 class Header extends Component {
   state = {
-    currentPage: "AboutPage"
+    currentPage: "/AboutPage"
   };
 
   handlePageChange = page => {
@@ -16,10 +16,10 @@ class Header extends Component {
 
   renderPage = () => {
     return <Switch>
-      <Route exact path="ContactPage" component={ContactPage} />
-      <Route exact path="AboutPage" component={AboutPage} />
-      <Route exact path="PortfolioPage" component={PortfolioPage} />
-      <Redirect to="AboutPage" />
+      <Route path="/ContactPage" component={ContactPage} />
+      <Route path="/AboutPage" component={AboutPage} />
+      <Route path="/PortfolioPage" component={PortfolioPage} />
+      {/* <Redirect to="/AboutPage" /> */}
     </Switch>
 
   };
@@ -27,7 +27,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <Router basename={'/Portfolio-React'}>
+        <Router basename={'/'}>
         <NavTabs
           currentPage={this.state.currentPage}
           handlePageChange={this.handlePageChange}
