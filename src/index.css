@@ -11,6 +11,17 @@
 .border{
   border: 1px solid grey;
 }
+.marginBottom {
+  margin-bottom: 50px;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 a, a:active, a:visited{
   color: black; 
+}
+.aboutMeText {
+  font-size: 150%;
 }
